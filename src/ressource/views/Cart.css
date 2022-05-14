@@ -1,0 +1,32 @@
+ul{
+  list-style: none;
+}
+
+.bg{
+  background-color: rgba(0, 0, 0, 0.1)
+}
+
+.crimson{
+  color: crimson;
+}
+
+.white{
+  color: white!important;
+}
+
+.bg-crimson{
+  background-color: crimson!important;
+}
+
+.bg-crimson:hover{
+  color: white;
+}
+
+.disabled{
+  opacity: .65;
+}
+
+.checkout{
+  color: rgba(255, 255, 255, 0.75 );
+}
+
