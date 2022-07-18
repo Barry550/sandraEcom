@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react';
+import React from 'react';
 import Row from './Row';
 import {useSelector} from "react-redux"
 export default function Table() {
@@ -17,9 +17,7 @@ export default function Table() {
       </thead>
 
       <tbody>
-        {items.map(items => {
-return (<Row  items={items}/>)
-        })}
+        {items?.map(items => <Row  items={items}/>)}
       </tbody>
     </table>
   );

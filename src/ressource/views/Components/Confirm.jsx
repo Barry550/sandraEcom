@@ -1,5 +1,5 @@
 import React,{Fragment, useContext} from 'react';
-import {useDispatch, useSelector} from "react-redux"
+import {useDispatch} from "react-redux"
 import { Link } from 'react-router-dom';
 import "./Confirm.css"
 import {UserProfileContext} from "../../../Lib/UserProfileContext"
@@ -7,7 +7,6 @@ import { resetCart } from '../../../Lib/actions';
 export default function Confirm() {
 
   const userProfile = useContext(UserProfileContext)
-  const items = useSelector(state => state.items)
   const dispatch = useDispatch()
   return (
     <Fragment>

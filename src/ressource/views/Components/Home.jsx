@@ -4,6 +4,10 @@ import SideMenu from '../../components/SideMenu';
 
 
 export default function Home({loadCategory, category, filtering, filter,Listes, updateCart}) {
+
+  console.log(Listes.flat());
+  const donne = Listes.flat()
+  console.log('donne', donne[0]);
   return (
     <div className="container">
           <div className="row">

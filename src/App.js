@@ -1,4 +1,4 @@
-import React, { Fragment ,useState, useEffect} from 'react';
+import React, { Fragment ,useState} from 'react';
 import {Navbar} from './ressource/components/Index';
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 import {Listes} from "./Data"
@@ -8,7 +8,6 @@ import Home from './ressource/views/Components/Home';
 import Checkout from './ressource/views/Components/Checkout';
 import UserProfileContextProvider from './Lib/UserProfileContext';
 import Confirm from "./ressource/views/Components/Confirm"
-import Axios from 'axios'; 
 
 
 const App = ({items, saveLocalStorage}) =>{

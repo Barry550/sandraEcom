@@ -5,8 +5,6 @@ export default function SideMenu({loadCategory,category}) {
 
   const List =  ["fruis", "legumes", "produit Frais","Epicerie", "Boisson"]
 
-
-
   return (
     <ul className="h5 list-group">
       

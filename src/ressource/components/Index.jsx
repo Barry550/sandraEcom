@@ -17,7 +17,6 @@ export const Navbar = ({filter,setFiltering}) => {
     <i className="fas fa-shopping-cart"></i> Mes courses en ligne 
       </Link>
 
-  
   </div>
            
             </a>
@@ -34,7 +33,7 @@ export const Navbar = ({filter,setFiltering}) => {
           onChange={(e)=>{
             setFiltering(e.target.value.length !== 0)
             filter(e.target.value)
-          }  }
+          }}
             />
         </form>
        
@@ -59,6 +58,7 @@ const Modal = ({item}) =>{
 
   const add = (item, quantity) =>{
     dispatch(addToCart(item, quantity))
+    // dispatch(saveCart(item))
   }
     return(
      

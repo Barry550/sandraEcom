@@ -17,7 +17,7 @@ export default function Row(props) {
   
   useEffect(()=>{
     dispatch(updateCart(id, qty))
-  },[qty])
+  },[qty, dispatch, id])
 
 
   const remove = id =>{
